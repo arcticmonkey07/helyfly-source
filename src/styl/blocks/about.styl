@@ -1,0 +1,101 @@
+.about
+  position: relative
+  display: flex
+  margin-bottom: 48px
+  padding-bottom: 16px
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 1139px
+    border: 0.5px solid #C7C7C7
+
+.about__text-container
+  width: 585px
+
+.about__header
+  margin: 0
+  font-weight: 500
+  font-size: 21px
+  line-height: 26px
+
+.about__text
+  margin-top: 12px
+  margin-bottom: 6px
+  font-weight: normal
+  font-size: 18px
+  line-height: 24px
+  &--bold
+    font-weight: 600
+
+.about__text:first-of-type
+    margin-bottom: 26px
+
+.about__button
+  position: relative
+  margin-bottom: 36px
+  padding: 0
+  font-weight: 500
+  font-size: 18px
+  line-height: 23px
+  color: #5286EC
+  background-color: transparent
+  border: none
+  cursor: pointer
+  &:after
+    content: ''
+    position: absolute
+    top: 10px
+    right: -21px
+    width: 11px
+    height: 6px
+    background-image: url(./../../img/arrow.svg);
+  &:hover
+    text-decoration: underline
+
+.about__photo-container
+  position: relative
+  width: 298px
+  margin-left: auto
+  margin-right: 113px
+  &:before
+    content: ''
+    position: absolute
+    top: 19px
+    right: 0
+    width: 31px
+    height: 27px
+    background-image: url(./../../img/heart.svg);
+
+.about__img
+  margin: 0 auto
+  margin-top: 32px
+  margin-bottom: 23px
+
+.about__photo-header
+  margin-top: 0
+  margin-bottom: 7px
+  //margin-left: 39px
+  font-weight: 500
+  font-size: 20px
+  line-height: 22px
+  text-align: center
+
+.about__photo-text
+  display: block
+  margin-bottom: 8px
+  font-weight: normal
+  font-size: 16px
+  line-height: 21px
+  text-align: center
+
+.about__link
+  display: block
+  font-weight: 500
+  font-size: 16px
+  line-height: 21px
+  text-align: center
+  color: #5286EC
+  &:hover
+    text-decoration: underline

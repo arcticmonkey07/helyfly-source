@@ -1,0 +1,62 @@
+.photos
+  position: relative
+  margin-bottom: 36px
+  padding-bottom: 21px
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 1139px
+    border: 0.5px solid #C7C7C7
+
+.photos__header
+  margin: 0
+  margin-bottom: 34px
+  font-weight: 500
+  font-size: 23px
+  line-height: 29px
+
+.photos__list
+  display: flex
+  justify-content: space-around
+  flex-wrap wrap
+  margin: 0
+  margin-bottom: 30px
+  padding: 0
+  list-style: none
+
+.photos__item
+  margin-bottom: 11px
+
+.photos__all-photos
+  position: relative
+  left: -8px
+  display: block
+  margin: 0 auto
+  font-weight: 500
+  font-size: 19px
+  line-height: 25px
+  color: #5286EC
+  border: none
+  text-align: center
+  background-color: transparent
+  cursor: pointer
+  &:before
+    content: ''
+    position: absolute
+    top: 12px
+    left: -15px
+    width: 11px
+    height: 6px
+    background-image: url(./../../img/arrow.svg);
+  &:after
+    content: ''
+    position: absolute
+    top: 12px
+    right: -17px
+    width: 11px
+    height: 6px
+    background-image: url(./../../img/arrow.svg);
+  &:hover
+    text-decoration: underline
