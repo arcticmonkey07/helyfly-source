@@ -1,6 +1,7 @@
 'use strict';
 
 (function () {
+
   let reserveButton = document.querySelector('.header-middle__button');
   let modalClose = document.querySelector('.modal__close');
   let modalReserve = document.querySelector('.modal-reserve');
@@ -16,4 +17,5 @@
     modalReserve.classList.remove('modal-show-animate');
     modalReserve.classList.add('visually-hidden');
   });
+  
 })();
