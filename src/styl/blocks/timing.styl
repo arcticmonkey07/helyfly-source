@@ -1,21 +1,35 @@
 .timing
   margin-bottom: 82px
+  @media screen and (max-width: 320px)
+    margin-bottom: 146px
 
 .timing__header
   margin-bottom: 26px
   font-weight: 500
   font-size: 23px
   line-height: 29px
+  @media screen and (max-width: 320px)
+    margin-top: 0
+    margin-bottom: 40px
+    font-size: 30px
+    line-height: 31px
+    text-align: center
 
 .timing__container
   width: 770px
   height: 458px
   border: 1px solid #C7C7C7
   box-sizing: border-box
+  @media screen and (max-width: 320px)
+    width: 290px
+    height: 500px
+    border-bottom: none
 
 .timing__date-container
   height: 72px
   border-bottom: 0.5px solid #C7C7C7
+  @media screen and (max-width: 320px)
+    height: 58px
 
 .timing__date
   position: relative
@@ -27,6 +41,9 @@
   font-weight: normal
   font-size: 20px
   line-height: 26px
+  @media screen and (max-width: 320px)
+    margin-top: 18px
+    margin-left: 44px
 
 .timing__date-button
   position: relative
@@ -39,6 +56,8 @@
   border-radius: 3px
   background-color: transparent
   cursor: pointer
+  @media screen and (max-width: 320px)
+    display: none
   &:before
     content: ''
     position: absolute
@@ -58,10 +77,16 @@
   padding-left: 28px
   padding-right: 30px
   border-bottom: 0.5px solid #C7C7C7
+  @media screen and (max-width: 320px)
+    flex-direction: column
+    height: 192px
+    padding-top: 28px
+    padding-left: 18px
 
-.timing__info-container
-  &:last-of-type
-    border-bottom: none
+.timing__info-container--bottom
+  border-bottom: none
+  @media screen and (max-width: 320px)
+    border-bottom: 0.5px solid #C7C7C7
 
 .timing__time
   display: block
@@ -69,6 +94,8 @@
   font-weight: normal
   font-size: 18px
   line-height: 26px
+  @media screen and (max-width: 320px)
+    margin-bottom: 11px
 
 .timing__price
   display: block
@@ -76,6 +103,16 @@
   font-weight: 600
   font-size: 18px
   line-height: 22px
+  @media screen and (max-width: 320px)
+    display: none
+  &--mob
+    display: none
+    @media screen and (max-width: 320px)
+      display: block
+      margin-bottom: 9px
+      font-weight: 600
+      font-size: 18px
+      line-height: 22px
 
 .timing__text
   display: block
@@ -97,6 +134,9 @@
   box-sizing: border-box
   border-radius: 3px
   cursor: pointer
+  @media screen and (max-width: 320px)
+    margin-top: 21px
+    margin-left: 0
   &:hover
     background-color: #FC9B09;
     color: #ffffff;
@@ -104,7 +144,26 @@
 .timing__info-reviews
   margin-top: 19px
   margin-left: 28px
+  @media screen and (max-width: 320px)
+    position: relative
+    left: -1px
+    width: 290px
+    height: 99px
+    margin-top: 0
+    margin-left: 0
+    padding-top: 9px
+    padding-left: 18px
+    box-sizing border-box
+    border: 1px solid #C7C7C7
+    border-top: none
 
 .timing__stars-container
   margin-top: 35px
   margin-left: 16px
+  @media screen and (max-width: 320px)
+    margin-top: -7px
+    margin-left: 49px
+
+.timing__star
+  @media screen and (max-width: 320px)
+    margin-right: 4px

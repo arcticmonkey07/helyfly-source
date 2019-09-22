@@ -1,60 +1,21 @@
-.footer-container
+.footer__top-section
   display: flex
-  padding-bottom: 32px
-
-.footer__left-section
   margin-left: 66px
+  @media screen and (max-width: 320px)
+    margin-left: 0
 
 .footer__logo
   display: block
   width: 128px
   height: 23px
   margin-top: 21px
-  margin-bottom: 52px
+  margin-bottom: 42px
   background-image: url('./../../img/logo.svg')
   background-repeat: no-repeat
-  
-.footer__mastercard-icon
-  display: inline-block
-  width: 39px
-  height: 25px
-  margin-right: 20px
-  background-image: url(./../../img/MC.svg)
-
-.footer__visa-icon
-  display: inline-block
-  width: 39px
-  height: 27px
-  background-image: url(./../../img/VISA.svg)
-
-.footer__middle-section
-  display: flex
-  flex-direction: column
-  justify-content: flex-end
-  width: 280px
-  margin-left: 238px
-
-.footer__right-section
-  margin-left: auto
-  margin-top: 6px
-  margin-right: 68px
-
-.footer__phone
-  display: block
-  margin-bottom: 8px
-  text-align: center
-  font-weight: normal
-  font-size: 15px
-  line-height: 17px
-  color: #B3B3B3
-
-.footer__copyright
-  display: block
-  text-align: center
-  font-weight: normal
-  font-size: 15px
-  line-height: 17px
-  color: #B3B3B3
+  @media screen and (max-width: 320px)
+    width: 85px
+    margin-top: 12px
+    margin-bottom: 19px
 
 .footer__social-list
   display: flex
@@ -62,16 +23,30 @@
   align-items: center
   width: 220px
   height: 35px
-  margin: 0
+  margin-top: 7px
+  margin-right: 68px
+  margin-left: auto
+  margin-bottom: 0
   padding: 0
   list-style: none
+  @media screen and (max-width: 320px)
+    justify-content: space-between
+    width: 136px
+    margin-top: 0
+    margin-right: 0
 
-.footer__social-item
+.footer__social-item--ru
+  display: block
+  @media screen and (max-width: 320px)
+    display: none
+
+.footer__social-link
   &--ru
     position: relative
     font-weight: normal
     font-size: 17px
     line-height: 18px
+    color: #37373f
     &:after
       content: ''
       position: absolute
@@ -80,6 +55,15 @@
       width: 11px
       height: 6px
       background-image: url(./../../img/arrow.svg);
+    &:hover
+      text-decoration: underline
+
+.footer__social-link
+  &:hover
+    transform translateY(-5px)
+    transition: .5s;
+    @media screen and (max-width: 320px)
+      transform none
 
 .footer__social-vk
   display: block
@@ -98,3 +82,110 @@
   width: 26px
   height: 26px
   background-image: url(./../../img/Instragram.svg);
+
+.footer__bottom-section
+  padding-top: 10px
+  padding-bottom: 31px
+  background: #FAF9F8
+  @media screen and (max-width: 320px)
+    padding-top: 26px
+    width: 320px;
+    background: #FFFFFF;
+    border-top: 0.5px solid #B3B3B3;
+
+.footer__mastercard-icon
+  display: inline-block
+  width: 39px
+  height: 25px
+  margin-right: 20px
+  margin-left: 66px
+  background-image: url(./../../img/MC.svg)
+  background-size: cover
+  @media screen and (max-width: 320px)
+    width: 34px
+    height: 21px
+    margin-left: 0
+    margin-right: 17px
+  &:hover
+    transform translateY(-5px)
+    transition: .5s;
+    @media screen and (max-width: 320px)
+      transform none
+
+.footer__visa-icon
+  display: inline-block
+  width: 39px
+  height: 27px
+  background-image: url(./../../img/VISA.svg)
+  background-size: cover
+  @media screen and (max-width: 320px)
+    width: 33px
+    height: 23px
+    margin-right: 17px
+  &:hover
+    transform translateY(-5px)
+    transition: .5s;
+    @media screen and (max-width: 320px)
+      transform none
+
+.footer__paypal-icon
+  display: none
+  @media screen and (max-width: 320px)
+    display: inline-block
+    width: 34px
+    height: 23px
+    background-image: url(./../../img/PP.svg)
+    background-size: cover
+  &:hover
+    transform translateY(-5px)
+    transition: .5s;
+    @media screen and (max-width: 320px)
+      transform none
+
+.footer__phone
+  position: relative
+  top: -41px
+  display: block
+  margin-bottom: 8px
+  text-align: center
+  font-weight: normal
+  font-size: 15px
+  line-height: 17px
+  color: #B3B3B3
+  @media screen and (max-width: 320px)
+    position: static
+    margin-top: 19px
+  &:hover
+    text-decoration: underline
+
+.footer__copyright
+  position: relative
+  top: -41px
+  display: block
+  text-align: center
+  font-weight: normal
+  font-size: 14px
+  line-height: 17px
+  color: #B3B3B3
+  @media screen and (max-width: 320px)
+    position: static
+
+.footer__ru
+  display: none
+  @media screen and (max-width: 320px)
+    position: relative
+    display: inline-block
+    float: right;
+    margin-right: 16px
+    font-weight: normal
+    font-size: 17px
+    line-height: 18px
+    color: #37373f
+    &:after
+      content: ''
+      position: absolute
+      top: 7px
+      right: -15px
+      width: 11px
+      height: 6px
+      background-image: url(./../../img/arrow.svg);

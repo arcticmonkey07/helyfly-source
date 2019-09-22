@@ -2,11 +2,13 @@
   display: flex
   margin-bottom: 22px
   padding-top: 70px
+  @media screen and (max-width: 320px)
+    margin-bottom: 40px
+    padding-top: 38px
 
 .description__container
   position: relative
-  display: flex
-  flex-direction: column
+  width: 100%
   padding-bottom: 24px
   &:after
     content: ''
@@ -14,9 +16,13 @@
     bottom: 6px
     left: 0
     width: 569px
-    border: 1px solid #C7C7C7
+    border: 0.5px solid #C7C7C7
+    @media screen and (max-width: 320px)
+      bottom: 19px
+      width: 290px
 
 .description__header
+  display: inline-block
   width: 260px
   margin-top: 0
   margin-bottom: 10px
@@ -24,6 +30,64 @@
   font-size: 46px
   line-height: 48px
   color: #37373F
+  @media screen and (max-width: 320px)
+    width: 290px
+    margin-bottom: 13px
+    font-size: 31px
+    line-height: 34px
+    text-align: center
+
+.description__photo
+  position: relative
+  float: right
+  width: 554px
+  height: 374px
+  @media screen and (max-width: 320px)
+    width: 290px
+    height: 197px
+    margin-bottom: 28px;
+
+.description__photo-img
+  position: absolute
+  top: 0
+  left: 0
+  z-index 2
+  display: block
+  cursor: pointer
+  @media screen and (max-width: 320px)
+    display: none
+
+.description__photo-img-play
+  position: absolute
+  z-index 4
+  bottom: 30px
+  right: 26px
+  border-top: 13px solid transparent
+  border-left: 15px solid #ffffff
+  border-right: 15px solid transparent
+  border-bottom 12px solid transparent
+  @media screen and (max-width: 320px)
+    bottom: 17px;
+    right: 4px;
+    border-top: 11px solid transparent;
+    border-left: 13px solid #fff;
+    border-right: 14px solid transparent;
+    border-bottom: 9px solid transparent;
+
+#description-video
+  position: absolute
+  top: 0
+  left: 0
+  z-index 1
+  @media screen and (max-width: 320px)
+    display: none
+
+.description__photo-img--mob
+  display: none
+  @media screen and (max-width: 320px)
+    display: block
+    width: 290px
+    height: 197px
 
 .description__text
   width: 500px;
@@ -34,11 +98,18 @@
   line-height: 26px
   color: #37373F
   letter-spacing: 0.2px
+  @media screen and (max-width: 320px)
+    width: 100%
+    margin-bottom: 27px
+    font-size: 15px
+    line-height: 20px
 
 .description__feature-list
   margin: 0
   padding: 0
   list-style none
+  @media screen and (max-width: 320px)
+    margin-bottom: 11px
   &:after
     content: ''
     position: absolute
@@ -46,6 +117,9 @@
     left: 0
     width: 569px
     border: 0.5px solid #C7C7C7
+    @media screen and (max-width: 320px)
+      bottom: 89px
+      width: 290px
 
 .description__feature
   position: relative
@@ -57,6 +131,11 @@
   font-size: 15px
   line-height: 20px
   color: #37373F
+  @media screen and (max-width: 320px)
+    height: 45px
+    padding-left: 44px
+    font-size: 15px
+    line-height: 20px
 
 .description__feature-record
   &:before
@@ -64,10 +143,64 @@
     position: absolute
     top: 8px
     left: 0
-    width: 34px
-    height: 34px
+    width: 40px
+    height: 37px
     background-image: url(./../../img/record.svg)
     background-repeat: no-repeat
+    @media screen and (max-width: 320px)
+      width: 33px
+      height: 32px
+      background-image: url(./../../img/record-mob.png)
+      background-size: cover
+
+.description__feature-rus
+  display: none
+  @media screen and (max-width: 320px)
+    display: flex
+  &:before
+    @media screen and (max-width: 320px)
+      content: ''
+      position: absolute
+      top: 8px
+      left: 0
+      width: 34px
+      height: 34px
+      background-image: url(./../../img/answers.svg)
+      background-repeat: no-repeat
+
+.description__feature-dollar
+  display: none
+  @media screen and (max-width: 320px)
+    display: flex
+    margin-top: -5px;
+    &--bold
+      margin-left: 5px
+      font-weight: bold
+  &:before
+    @media screen and (max-width: 320px)
+      content: ''
+      position: absolute
+      top: 13px
+      left: 0
+      width: 31px
+      height: 20px
+      background-image: url(./../../img/dollar.svg)
+      background-repeat: no-repeat
+
+.description__feature-dubai
+  display: none
+  @media screen and (max-width: 320px)
+    display: flex
+  &:before
+    @media screen and (max-width: 320px)
+      content: ''
+      position: absolute
+      top: 2px
+      left: 0
+      width: 34px
+      height: 34px
+      background-image: url(./../../img/city.svg)
+      background-repeat: no-repeat
 
 .description__feature-photos
   padding-left: 43px
@@ -80,10 +213,15 @@
     height: 34px
     background-image: url(./../../img/photos.svg)
     background-repeat: no-repeat
+    @media screen and (max-width: 320px)
+      top: 7px
 
 .description__feature-city
+  display: flex
   height: 41px
   padding-left: 43px
+  @media screen and (max-width: 320px)
+    display: none
   &:before
     content: ''
     position: absolute
@@ -95,9 +233,12 @@
     background-repeat: no-repeat
 
 .description__feature-answers
+  display: flex
   margin-bottom: 21px
   padding-left: 42px
   letter-spacing: 0.5px
+  @media screen and (max-width: 320px)
+    display: none
   &:before
     content: ''
     position: absolute
@@ -110,13 +251,20 @@
 
 .description__feature-reviews-container
   display: flex
+  @media screen and (max-width: 320px)
+    flex-direction: column
 
 .description__feature-reviews
   padding-top: 18px
   padding-left: 43px
   font-size: 20px
   line-height: 26px
-  &:after
+  @media screen and (max-width: 320px)
+    padding-top: 8px
+    padding-left: 49px
+    font-size: 15px
+    line-height: 20px
+  &:before
     content: ''
     position: absolute
     top: 22px
@@ -125,28 +273,25 @@
     height: 37px
     background-image: url(./../../img/reviews.svg)
     background-repeat: no-repeat
+    @media screen and (max-width: 320px)
+      width: 37px
+      height: 40px
   &--bold
+    display: inline
     padding: 0 5px
     font-weight: bold
+    @media screen and (max-width: 320px)
+      display: none
+    &-mobile
+      display: none
+      @media screen and (max-width: 320px)
+        display: inline
+        padding: 0 5px
+        font-weight: bold
 
 .description__feature-stars-container
   margin-top: 35px
   margin-left: 16px
-
-.description__photo
-  position: relative
-  margin-left: auto
-  &:after
-    content: ''
-    position: absolute
-    bottom: 30px
-    right: 26px
-    border-top: 13px solid transparent
-    border-left: 15px solid #ffffff
-    border-right: 15px solid transparent
-    border-bottom 12px solid transparent
-
-.description__photo-img
-  width: 554px
-  height: 374px
-  background-image: url(./../../img/description-photo.png)
+  @media screen and (max-width: 320px)
+    margin-top: -7px
+    margin-left: 49px

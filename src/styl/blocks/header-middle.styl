@@ -1,6 +1,9 @@
 .header-middle
   height: 840px
   background-image: url('./../../img/header-top-bg.png')
+  @media screen and (max-width: 320px)
+    height: 655px
+    background-image: url(./../../img/mobile-top-bg.png);
 
 .header-middle__text
   display: block
@@ -13,9 +16,17 @@
   line-height: 49px
   color: #FFFFFF
   letter-spacing: 2.2px
+  @media screen and (max-width: 320px)
+    width: 280px
+    margin-bottom: 37px
+    padding-top: 142px
+    font-size: 32px
+    line-height: 39px
 
 .header-middle__text--color
   color: #FC9B09
+  @media screen and (max-width: 320px)
+    letter-spacing: 1.6px
 
 .header-middle__price
   position: relative
@@ -35,6 +46,12 @@
     background-color: #FC9B09
     transform rotate(45deg)
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1)
+  @media screen and (max-width: 320px)
+    width: 200px
+    height: 77px
+    &:after
+      bottom: -6px
+      left: 110px
 
 .header-middle__price-text
   display: block
@@ -46,6 +63,10 @@
   line-height: 30px
   color: #FFFFFF
   letter-spacing: 1.1px
+  @media screen and (max-width: 320px)
+    padding-top: 5px
+    padding-left: 18px
+    font-size: 18px
 
 .header-middle__price-amount
   padding-left: 23px
@@ -53,6 +74,9 @@
   font-size: 35px
   line-height: 37px
   color: #FFFFFF
+  @media screen and (max-width: 320px)
+    padding-left: 19px
+    font-size: 30px
 
 .header-middle__price-circle
   position: absolute
@@ -64,6 +88,10 @@
   border: 1px solid #FFFFFF
   border-radius: 50%
   box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25), 0px 4px 15px rgba(255, 255, 255, 0.25)
+  @media screen and (max-width: 320px)
+    right: 15px
+    width: 45px
+    height: 45px
 
 .header-middle__price-percent
   position: absolute
@@ -74,6 +102,9 @@
   height: 36px
   background-image: url('./../../img/percent.svg');
   background-repeat: no-repeat;
+  @media screen and (max-width: 320px)
+    top: 26px
+    right: 23px
 
 .header-middle__button
   width: 304px
@@ -93,3 +124,8 @@
   &:hover
     background-color: #fff
     color: #000;
+  @media screen and (max-width: 320px)
+    width: 275px
+    height: 68px
+    font-size: 16px
+    box-shadow none

@@ -3,6 +3,9 @@
   display: flex
   margin-bottom: 48px
   padding-bottom: 16px
+  @media screen and (max-width: 320px)
+    flex-direction: column
+    margin-bottom: 0px
   &:after
     content: ''
     position: absolute
@@ -10,9 +13,14 @@
     left: 0
     width: 1139px
     border: 0.5px solid #C7C7C7
+    @media screen and (max-width: 320px)
+      width: 0
 
 .about__text-container
   width: 585px
+  @media screen and (max-width: 320px)
+    order: 2
+    width: 290px
 
 .about__header
   margin: 0
@@ -29,6 +37,9 @@
   &--bold
     font-weight: 600
 
+.about__text--hidden
+  display: none
+
 .about__text:first-of-type
     margin-bottom: 26px
 
@@ -43,6 +54,12 @@
   background-color: transparent
   border: none
   cursor: pointer
+  @media screen and (max-width: 320px)
+    margin-top: 38px
+    margin-bottom: 26px
+  &:last-of-type
+    @media screen and (max-width: 320px)
+      margin-top: 14px
   &:after
     content: ''
     position: absolute
@@ -59,6 +76,12 @@
   width: 298px
   margin-left: auto
   margin-right: 113px
+  @media screen and (max-width: 320px)
+    order: 1
+    left: -10px;
+    margin-right: 0
+    margin-left: 0
+    margin-bottom: 18px
   &:before
     content: ''
     position: absolute
@@ -67,11 +90,18 @@
     width: 31px
     height: 27px
     background-image: url(./../../img/heart.svg);
+    @media screen and (max-width: 320px)
+      top: -28px
 
 .about__img
   margin: 0 auto
   margin-top: 32px
   margin-bottom: 23px
+  @media screen and (max-width: 320px)
+    margin-top: -15px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 24px;
 
 .about__photo-header
   margin-top: 0

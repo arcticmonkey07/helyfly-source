@@ -2,6 +2,9 @@
   position: relative
   margin-bottom: 36px
   padding-bottom: 21px
+  @media screen and (max-width: 320px)
+    margin-bottom: 0
+    padding-bottom: 0
   &:after
     content: ''
     position: absolute
@@ -9,6 +12,8 @@
     left: 0
     width: 1139px
     border: 0.5px solid #C7C7C7
+    @media screen and (max-width: 320px)
+      width: 0
 
 .photos__header
   margin: 0
@@ -16,6 +21,13 @@
   font-weight: 500
   font-size: 23px
   line-height: 29px
+  @media screen and (max-width: 320px)
+    width: 250px
+    margin: 0 auto
+    margin-bottom: 31px
+    font-size: 31px
+    line-height: 34px
+    text-align: center
 
 .photos__list
   display: flex
@@ -25,6 +37,17 @@
   margin-bottom: 30px
   padding: 0
   list-style: none
+  @media screen and (max-width: 320px)
+    display: none
+    margin-bottom: 19px
+
+#photos__list--carousel
+  display: none
+  @media screen and (max-width: 320px)
+    display: flex
+
+#photos__list--carousel.photos__image
+  width: 275px
 
 .photos__item
   margin-bottom: 11px
@@ -42,6 +65,8 @@
   text-align: center
   background-color: transparent
   cursor: pointer
+  @media screen and (max-width: 320px)
+    display: none
   &:before
     content: ''
     position: absolute
@@ -60,3 +85,13 @@
     background-image: url(./../../img/arrow.svg);
   &:hover
     text-decoration: underline
+
+#photos-container
+  display: none
+  justify-content: space-around
+  flex-wrap: wrap
+  margin: 0
+  margin-bottom: 30px
+  padding: 0
+  img
+    margin-bottom: 11px
