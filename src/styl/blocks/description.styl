@@ -56,6 +56,12 @@
   cursor: pointer
   @media screen and (max-width: 320px)
     display: none
+  &:hover
+    box-shadow: 0 0 30px 0 #111811
+    transition .5s
+  &:hover + .description__photo-img-play
+    transform: scale(1.5)
+    transition .5s
 
 .description__photo-img-play
   position: absolute
@@ -280,14 +286,6 @@
     display: inline
     padding: 0 5px
     font-weight: bold
-    @media screen and (max-width: 320px)
-      display: none
-    &-mobile
-      display: none
-      @media screen and (max-width: 320px)
-        display: inline
-        padding: 0 5px
-        font-weight: bold
 
 .description__feature-stars-container
   margin-top: 35px

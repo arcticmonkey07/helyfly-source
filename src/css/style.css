@@ -530,6 +530,14 @@ img {
     display: none;
   }
 }
+.description__photo-img:hover {
+  box-shadow: 0 0 30px 0 #111811;
+  transition: 0.5s;
+}
+.description__photo-img:hover + .description__photo-img-play {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
 .description__photo-img-play {
   position: absolute;
   z-index: 4;
@@ -816,21 +824,6 @@ img {
   display: inline;
   padding: 0 5px;
   font-weight: bold;
-}
-@media screen and (max-width: 320px) {
-  .description__feature-reviews--bold {
-    display: none;
-  }
-}
-.description__feature-reviews--bold-mobile {
-  display: none;
-}
-@media screen and (max-width: 320px) {
-  .description__feature-reviews--bold-mobile {
-    display: inline;
-    padding: 0 5px;
-    font-weight: bold;
-  }
 }
 .description__feature-stars-container {
   margin-top: 35px;
@@ -1500,20 +1493,11 @@ img {
 }
 @media screen and (max-width: 320px) {
   .meeting-info__author-link {
-    display: none;
+    margin-left: 79px;
   }
 }
 .meeting-info__author-link:hover {
   text-decoration: underline;
-}
-.meeting-info__author-link--mob {
-  display: none;
-}
-@media screen and (max-width: 320px) {
-  .meeting-info__author-link--mob {
-    display: block;
-    margin-left: 79px;
-  }
 }
 
 .modal__background {
@@ -1560,6 +1544,14 @@ img {
   background-image: url("./../../img/Close.svg");
   cursor: pointer;
 }
+@media screen and (max-width: 320px) {
+  .modal__close {
+    top: 16px;
+    right: 13px;
+    width: 21px;
+    height: 21px;
+  }
+}
 .modal__header {
   margin-top: 19px;
   margin-bottom: 26px;
@@ -1570,8 +1562,10 @@ img {
 }
 @media screen and (max-width: 320px) {
   .modal__header {
-    margin-top: 51px;
-    margin-bottom: 35px;
+    margin-top: 49px;
+    margin-bottom: 29px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 .modal__label {
@@ -1598,11 +1592,18 @@ img {
   .modal__input {
     width: 270px;
     height: 44px;
+    margin-bottom: 14px;
   }
 }
 .modal__input::-webkit-input-placeholder {
   color: #c7c7c7;
   font-size: 17px;
+}
+.modal__input-surname {
+  margin-bottom: 20px;
+}
+.modal__input-tel {
+  margin-bottom: 23px;
 }
 .modal__input-date {
   position: relative;
@@ -1629,6 +1630,12 @@ img {
   margin-bottom: 0;
   border-radius: 3px 3px 0 0;
 }
+@media screen and (max-width: 320px) {
+  .modal__input-card-number {
+    width: 267px;
+    height: 46.5px;
+  }
+}
 .modal__input-validity {
   display: block;
   float: left;
@@ -1642,8 +1649,8 @@ img {
 }
 @media screen and (max-width: 320px) {
   .modal__input-validity {
-    width: 270px;
-    height: 44px;
+    width: 267px;
+    height: 48.5px;
     border-radius: 0 0 0 0;
   }
 }
@@ -1664,8 +1671,8 @@ img {
 }
 @media screen and (max-width: 320px) {
   .modal__input-cvv {
-    width: 270px;
-    height: 44px;
+    width: 267px;
+    height: 48px;
     border-left: 1px solid #c7c7c7;
     border-radius: 0 0 3px 3px;
   }
@@ -1679,6 +1686,12 @@ img {
   display: block;
   margin-top: 37px;
   margin-bottom: 24px;
+}
+@media screen and (max-width: 320px) {
+  .modal__label-agree {
+    margin-top: 25px;
+    margin-bottom: 27px;
+  }
 }
 .modal__input-agree:checked + .modal__input-agree-indicator {
   background-image: url("./../../img/checkbox.svg");
@@ -2280,23 +2293,6 @@ img {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-}
-@media screen and (max-width: 320px) {
-  .timing__price {
-    display: none;
-  }
-}
-.timing__price--mob {
-  display: none;
-}
-@media screen and (max-width: 320px) {
-  .timing__price--mob {
-    display: block;
-    margin-bottom: 9px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-  }
 }
 .timing__text {
   display: block;

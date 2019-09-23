@@ -4,14 +4,14 @@
     <list default="true" id="f5960987-3161-4084-87c3-08a73391820f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/Close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/Close.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pug/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/blocks/header-middle.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/blocks/header-middle.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styl/blocks/description.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/blocks/description.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styl/blocks/map.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/blocks/map.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styl/blocks/modal-reserve.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/blocks/modal-reserve.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/blocks/photos.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/blocks/photos.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styl/blocks/timing.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/blocks/timing.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styl/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/styl/style.styl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,7 +37,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1175">
+            <state relative-caret-position="1025">
               <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
             </state>
           </provider>
@@ -46,26 +46,17 @@
       <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pug/index.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="268" column="23" selection-start-line="268" selection-start-column="9" selection-end-line="268" selection-end-column="23" />
+            <state relative-caret-position="98">
+              <caret line="253" column="55" selection-start-line="253" selection-start-column="55" selection-end-line="253" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modal-reserve.styl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="modal-reserve.styl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styl/blocks/modal-reserve.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+            <state relative-caret-position="400">
+              <caret line="160" column="23" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -79,6 +70,8 @@
       <find>color</find>
       <find>active</find>
       <find>.photos__image</find>
+      <find>.timing__price</find>
+      <find>play</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,15 +106,16 @@
         <option value="$PROJECT_DIR$/src/styl/blocks/footer.styl" />
         <option value="$PROJECT_DIR$/src/styl/blocks/about.styl" />
         <option value="$PROJECT_DIR$/src/styl/blocks/reviews.styl" />
-        <option value="$PROJECT_DIR$/src/styl/blocks/description.styl" />
-        <option value="$PROJECT_DIR$/src/styl/blocks/map.styl" />
         <option value="$PROJECT_DIR$/src/styl/blocks/photos.styl" />
-        <option value="$PROJECT_DIR$/src/styl/blocks/timing.styl" />
         <option value="$PROJECT_DIR$/src/styl/blocks/header-middle.styl" />
-        <option value="$PROJECT_DIR$/src/pug/index.pug" />
         <option value="$PROJECT_DIR$/src/styl/style.styl" />
-        <option value="$PROJECT_DIR$/src/styl/blocks/modal-reserve.styl" />
+        <option value="$PROJECT_DIR$/src/styl/blocks/timing.styl" />
         <option value="$PROJECT_DIR$/src/js/script.js" />
+        <option value="$PROJECT_DIR$/src/styl/blocks/map.styl" />
+        <option value="$PROJECT_DIR$/src/styl/blocks/description.styl" />
+        <option value="$PROJECT_DIR$/src/img/Close.svg" />
+        <option value="$PROJECT_DIR$/src/pug/index.pug" />
+        <option value="$PROJECT_DIR$/src/styl/blocks/modal-reserve.styl" />
       </list>
     </option>
   </component>
@@ -244,11 +238,14 @@
       <workItem from="1569079232279" duration="15326000" />
       <workItem from="1569139840791" duration="38405000" />
       <workItem from="1569234692649" duration="3099000" />
+      <workItem from="1569255872037" duration="435000" />
+      <workItem from="1569265014670" duration="2103000" />
+      <workItem from="1569273188490" duration="1631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95550000" />
+    <option name="totallyTimeSpent" value="99719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -351,9 +348,6 @@
     <entry file="file://$PROJECT_DIR$/src/img/arrow.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/Close.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/img/calendar.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -453,20 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styl/blocks/description.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styl/blocks/map.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styl/blocks/reviews.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -478,13 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
           <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styl/blocks/timing.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -504,7 +477,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
+        <state relative-caret-position="1025">
           <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
         </state>
       </provider>
@@ -516,24 +489,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pug/index.pug">
+    <entry file="file://$PROJECT_DIR$/src/styl/blocks/timing.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="268" column="23" selection-start-line="268" selection-start-column="9" selection-end-line="268" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styl/blocks/modal-reserve.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        <state relative-caret-position="84">
+          <caret line="99" selection-start-line="99" selection-end-line="99" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+        <state relative-caret-position="402">
+          <caret line="78" column="108" selection-start-line="78" selection-start-column="108" selection-end-line="78" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styl/blocks/map.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/Close.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styl/blocks/description.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="62" column="25" lean-forward="true" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pug/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="253" column="55" selection-start-line="253" selection-start-column="55" selection-end-line="253" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styl/blocks/modal-reserve.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="160" column="23" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
         </state>
       </provider>
     </entry>

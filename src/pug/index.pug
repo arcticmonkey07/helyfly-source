@@ -46,7 +46,7 @@ html(lang='ru-RU')
                             li.description__feature.description__feature-answers Готовы ответить на любые вопросы
                         .description__feature-reviews-container
                             span.description__feature.description__feature-reviews.
-                                Более #[span.description__feature-reviews--bold 50]#[span.description__feature-reviews--bold-mobile 150] отзывов с оценкой
+                                Более #[span.description__feature-reviews--bold 50] отзывов с оценкой
                             .stars__container.description__feature-stars-container
                                 span.stars__star
                                 span.stars__star
@@ -125,19 +125,17 @@ html(lang='ru-RU')
                             .timing__info
                                 span.timing__time 15:00 - 18:00
                                 span.timing__price 1500₽
-                                span.timing__price--mob 850₽
                                 span.timing__text Осталось — 1 место
                             button.timing__info-button Выбрать
                         .timing__info-container.timing__info-container--bottom
                             .timing__info
                                 span.timing__time 19:00 - 22:00
-                                span.timing__price 1500₽
-                                span.timing__price--mob 850₽
+                                span.timing__price.timing__price--second 1500₽
                                 span.timing__text Осталось — 1 место
                             button.timing__info-button Выбрать
                         .description__feature-reviews-container.timing__info-reviews
                             span.description__feature.description__feature-reviews.
-                                Более #[span.description__feature-reviews--bold 50]#[span.description__feature-reviews--bold-mobile 150] отзывов с оценкой
+                                Более #[span.description__feature-reviews--bold.timing__bold-text 50] отзывов с оценкой
                             .stars__container.timing__stars-container
                                 span.stars__star.timing__star
                                 span.stars__star.timing__star
@@ -179,7 +177,6 @@ html(lang='ru-RU')
                         p.meeting-info__author-text Мария Иванова
                         p.meeting-info__author-description Фотограф
                         a.meeting-info__author-link(href="#") Показать больше информации
-                        a.meeting-info__author-link.meeting-info__author-link--mob(href="#") Показать больше информации о фотографе
         .reviews
             .container
                 h3.reviews__header Отзывы:
@@ -254,9 +251,9 @@ html(lang='ru-RU')
             label.modal__label Имя#[span.modal__label--color *]
                 input.modal__input(placeholder="Имя" name="name" minlength="3" maxlength="30" required)
             label.modal__label Фамилия#[span.modal__label--color *]
-                input.modal__input(placeholder="Фамилия" name="surname" minlength="3" maxlength="30" required)
+                input.modal__input.modal__input-surname(placeholder="Фамилия" name="surname" minlength="3" maxlength="30" required)
             label.modal__label Телефон#[span.modal__label--color *]
-                input.modal__input(placeholder="Телефон" type="tel" name="tel" minlength="3" maxlength="30" required)
+                input.modal__input.modal__input-tel(placeholder="Телефон" type="tel" name="tel" minlength="3" maxlength="30" required)
             label.modal__label Данные карты#[span.modal__label--color *]
                 input.modal__input.modal__input-card-number(placeholder="Номер карты" name="card-number" pattern="[0-9]{16}" minlength="16" maxlength="16" required)
             input.modal__input-validity(placeholder="Срок действия" name="validity" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" minlength="5" maxlength="5" required)
