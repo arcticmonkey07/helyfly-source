@@ -1,7 +1,18 @@
+.modal__background
+  position: absolute
+  top: -23px
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 3
+  background: #000000
+  opacity: 0.5
+
 .modal-reserve
   position: absolute
   top: 231px
   left: 50%
+  z-index: 4
   width: 615px
   height: 887px
   margin-left: -307px
@@ -10,6 +21,14 @@
   border-radius: 6px
   box-sizing: border-box
   transition 1.5s
+  @media screen and (max-width: 320px)
+    left: 15px
+    width: 290px
+    height: 946px
+    margin: 0
+    padding: 0
+    padding-left: 10px
+    padding-right: 10px
 
 .modal__close
   position: absolute
@@ -27,6 +46,9 @@
   font-size: 24px
   line-height: 33px
   text-align: center
+  @media screen and (max-width: 320px)
+    margin-top: 51px
+    margin-bottom: 35px
 
 .modal__label
   display: block
@@ -46,6 +68,9 @@
   border: 1px solid #C7C7C7
   box-sizing: border-box
   border-radius: 3px
+  @media screen and (max-width: 320px)
+    width: 270px
+    height: 44px
   &::-webkit-input-placeholder
     color: #C7C7C7
     font-size: 17px
@@ -83,6 +108,10 @@
   border-top: transparent
   box-sizing: border-box
   border-radius: 0 0 0 3px
+  @media screen and (max-width: 320px)
+    width: 270px
+    height: 44px
+    border-radius: 0 0 0 0
   &::-webkit-input-placeholder
     color: #C7C7C7
     font-size: 17px
@@ -97,6 +126,11 @@
   border-left: transparent
   box-sizing: border-box
   border-radius: 0 0 3px 0
+  @media screen and (max-width: 320px)
+    width: 270px
+    height: 44px
+    border-left: 1px solid #C7C7C7
+    border-radius: 0 0 3px 3px
   &::-webkit-input-placeholder
     color: #C7C7C7
     font-size: 17px
@@ -131,6 +165,8 @@
   font-size: 18px
   line-height: 19px
   cursor: pointer
+  @media screen and (max-width: 320px)
+    width: 215px
 
 .modal__confirm-button
   display: block
@@ -145,6 +181,10 @@
   border-radius: 3px
   color: #ffffff
   cursor: pointer
+  @media screen and (max-width: 320px)
+    width: 250px
+    height: 50px
+    font-size: 15px
   &:hover
     background: #fcae1f
     color: #dfdfdf

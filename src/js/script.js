@@ -47,17 +47,20 @@ $(document).ready(function() {
   let reserveButton = document.querySelector('.header-middle__button');
   let modalClose = document.querySelector('.modal__close');
   let modalReserve = document.querySelector('.modal-reserve');
+  let modalOverlay = document.querySelector('.modal__overlay');
 
   reserveButton.addEventListener('click', function (e) {
     e.preventDefault();
     modalReserve.classList.remove('visually-hidden');
     modalReserve.classList.add('modal-show-animate');
+    modalOverlay.classList.add('modal__background');
   });
 
   modalClose.addEventListener('click', function (e) {
     e.preventDefault();
     modalReserve.classList.remove('modal-show-animate');
     modalReserve.classList.add('visually-hidden');
+    modalOverlay.classList.remove('modal__background');
   });
 
 })();

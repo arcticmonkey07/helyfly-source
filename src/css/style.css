@@ -248,6 +248,7 @@ template {
 }
 
 body {
+  position: relative;
   font-size: 15px;
   line-height: 24px;
   font-family: Montserrat, "Arial", sans-serif;
@@ -1095,6 +1096,11 @@ img {
   height: 840px;
   background-image: url("./../../img/header-top-bg.png");
 }
+@media screen and (max-width: 1550px) {
+  .header-middle {
+    background-position: center;
+  }
+}
 @media screen and (max-width: 320px) {
   .header-middle {
     height: 655px;
@@ -1510,10 +1516,21 @@ img {
   }
 }
 
+.modal__background {
+  position: absolute;
+  top: -23px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: #000;
+  opacity: 0.5;
+}
 .modal-reserve {
   position: absolute;
   top: 231px;
   left: 50%;
+  z-index: 4;
   width: 615px;
   height: 887px;
   margin-left: -307px;
@@ -1522,6 +1539,17 @@ img {
   border-radius: 6px;
   box-sizing: border-box;
   transition: 1.5s;
+}
+@media screen and (max-width: 320px) {
+  .modal-reserve {
+    left: 15px;
+    width: 290px;
+    height: 946px;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .modal__close {
   position: absolute;
@@ -1539,6 +1567,12 @@ img {
   font-size: 24px;
   line-height: 33px;
   text-align: center;
+}
+@media screen and (max-width: 320px) {
+  .modal__header {
+    margin-top: 51px;
+    margin-bottom: 35px;
+  }
 }
 .modal__label {
   display: block;
@@ -1559,6 +1593,12 @@ img {
   border: 1px solid #c7c7c7;
   box-sizing: border-box;
   border-radius: 3px;
+}
+@media screen and (max-width: 320px) {
+  .modal__input {
+    width: 270px;
+    height: 44px;
+  }
 }
 .modal__input::-webkit-input-placeholder {
   color: #c7c7c7;
@@ -1600,6 +1640,13 @@ img {
   box-sizing: border-box;
   border-radius: 0 0 0 3px;
 }
+@media screen and (max-width: 320px) {
+  .modal__input-validity {
+    width: 270px;
+    height: 44px;
+    border-radius: 0 0 0 0;
+  }
+}
 .modal__input-validity::-webkit-input-placeholder {
   color: #c7c7c7;
   font-size: 17px;
@@ -1614,6 +1661,14 @@ img {
   border-left: transparent;
   box-sizing: border-box;
   border-radius: 0 0 3px 0;
+}
+@media screen and (max-width: 320px) {
+  .modal__input-cvv {
+    width: 270px;
+    height: 44px;
+    border-left: 1px solid #c7c7c7;
+    border-radius: 0 0 3px 3px;
+  }
 }
 .modal__input-cvv::-webkit-input-placeholder {
   color: #c7c7c7;
@@ -1650,6 +1705,11 @@ img {
   line-height: 19px;
   cursor: pointer;
 }
+@media screen and (max-width: 320px) {
+  .modal__label-agree-text {
+    width: 215px;
+  }
+}
 .modal__confirm-button {
   display: block;
   width: 390px;
@@ -1663,6 +1723,13 @@ img {
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
+}
+@media screen and (max-width: 320px) {
+  .modal__confirm-button {
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+  }
 }
 .modal__confirm-button:hover {
   background: #fcae1f;
@@ -1785,7 +1852,7 @@ img {
 @media screen and (max-width: 320px) {
   .photos__list {
     display: none;
-    margin-bottom: 19px;
+    margin-bottom: 30px;
   }
 }
 #photos__list--carousel {
@@ -1798,6 +1865,10 @@ img {
 }
 #photos__list--carousel.photos__image {
   width: 275px;
+}
+.photos__image {
+  width: 275px;
+  height: 185px;
 }
 .photos__item {
   margin-bottom: 11px;
@@ -2139,7 +2210,6 @@ img {
 }
 .timing__date-button {
   position: relative;
-  top: 8px;
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -2147,6 +2217,7 @@ img {
   box-sizing: border-box;
   border-radius: 3px;
   background-color: transparent;
+  vertical-align: middle;
   cursor: pointer;
 }
 @media screen and (max-width: 320px) {
