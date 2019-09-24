@@ -1,0 +1,23 @@
+form.modal-reserve.visually-hidden(action="#" method="post")
+	span.modal__close
+	h2.modal__header Бронирование
+	label.modal__label Дата#[span.modal__label--color *]
+		input.modal__input.modal__input-date(type="date" name="date" required)
+	label.modal__label Email#[span.modal__label--color *]
+		input.modal__input(placeholder="Электронная почта" type="email" name="email" required)
+	label.modal__label Имя#[span.modal__label--color *]
+		input.modal__input(placeholder="Имя" name="name" minlength="3" maxlength="30" required)
+	label.modal__label Фамилия#[span.modal__label--color *]
+		input.modal__input.modal__input-surname(placeholder="Фамилия" name="surname" minlength="3" maxlength="30" required)
+	label.modal__label Телефон#[span.modal__label--color *]
+		input.modal__input.modal__input-tel(placeholder="Телефон" type="tel" name="tel" minlength="3" maxlength="30" required)
+	label.modal__label Данные карты#[span.modal__label--color *]
+		input.modal__input.modal__input-card-number(placeholder="Номер карты" name="card-number" pattern="[0-9]{16}" minlength="16" maxlength="16" required)
+	input.modal__input-validity(placeholder="Срок действия" name="validity" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" minlength="5" maxlength="5" required)
+	input.modal__input-cvv(placeholder="CVV" name="cvv" pattern="[0-9]{3}" minlength="3" maxlength="3" required)
+	label.modal__label-agree
+		input.modal__input-agree.visually-hidden(type="checkbox" name="agree" required)
+		span.modal__input-agree-indicator
+		span.modal__label-agree-text Я согласен с пользовательским#[br] соглашением и публичной офертой
+	button.modal__confirm-button(type="submit") Забронировать
+.modal__overlay

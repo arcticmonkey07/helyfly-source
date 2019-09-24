@@ -6,7 +6,7 @@ const plumber = require('gulp-plumber');
 const browserSync = require('browser-sync').create();
 
 async function html() {
-  return gulp.src('src/pug/*.+(jade|pug)')
+  return gulp.src('src/pug/**/*.+(jade|pug)')
     .pipe(plumber())
     .pipe(pug({pretty: '\t'}))
     .pipe(gulp.dest('./src'))

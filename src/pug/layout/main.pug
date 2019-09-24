@@ -1,0 +1,20 @@
+block variables
+
+doctype html
+html(lang='ru-RU')
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="description", content=description)
+		title #{title}
+		link(rel="stylesheet" href="css/style.css")
+		link(rel="stylesheet" href="css/owl.theme.default.min.css")
+		link(rel="stylesheet" href="css/owl.carousel.min.css")
+	body
+		include ../modules/header
+		include ../modules/content
+		include ../modules/footer
+		include ../modules/modal-reserve
+		script(src="js/jquery-3.4.1.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/script.js")
