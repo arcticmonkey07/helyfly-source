@@ -6,10 +6,11 @@ const plumber = require('gulp-plumber');
 const browserSync = require('browser-sync').create();
 
 async function html() {
-  return gulp.src('src/pug/**/*.+(jade|pug)')
+  return gulp.src('src/pug/pages/*.+(jade|pug)')
     .pipe(plumber())
     .pipe(pug({pretty: '\t'}))
     .pipe(gulp.dest('./src'))
+    .pipe(browserSync.stream());
 }
 
 async function styles() {
@@ -36,7 +37,6 @@ function watch() {
   gulp.watch('./src/pug/**/*.+(jade|pug)', html);
   gulp.watch('./src/styl/**/*.styl', styles);
   // gulp.watch('./src/js/*.js', scripts);
-  gulp.watch('./src/*.html', styles);
   gulp.watch("./src/*.html").on('change', browserSync.reload);
 }
 
